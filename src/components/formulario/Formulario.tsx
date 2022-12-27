@@ -1,5 +1,5 @@
-import axios from 'axios'
 import React, { ChangeEvent, FormEvent, useState } from 'react'
+import axios from 'axios'
 
 export const Formulario = () => {
 	const [datos, setDatos] = useState({
@@ -52,7 +52,7 @@ export const Formulario = () => {
 	}
 
 	return (
-		<form onSubmit={enviarDatos}>
+		<form onSubmit={enviarDatos} className="container-form">
 			<div className="mb-3">
 				<label className="form-label">Título</label>
 				<input
